@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="730.0" layoutY="35.0" prefHeight="63.0" prefWidth="240.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="116.0" prefHeight="50.0" prefWidth="211.0" styleClass="card-title" text="Details Produit" textFill="#009685" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="452.0">
+            <font>
+                <Font name="Comic Sans MS" size="25.0" />
+            </font>
+        </Label>
+        <HBox prefHeight="88.0" prefWidth="970.0" style="-fx-background-color: #009685;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox layoutX="91.0" layoutY="488.0" prefHeight="54.0" prefWidth="428.0">
+         <children>
+            <JFXButton fx:id="btnSave" alignment="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="121.0" style="-fx-background-color: #CBCBCB; -fx-background-radius: 10px; -fx-border-radius: 10-px;" text="Save " textAlignment="CENTER" textFill="#009685">
+               <font>
+                  <Font name="Eras Bold ITC" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" right="30.0" top="20.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" alignment="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="110.0" style="-fx-background-color: CBCBCB; -fx-background-radius: 10px; -fx-border-radius: 10-px;" text="Cancel" textAlignment="CENTER" textFill="#009685">
+               <font>
+                  <Font name="Eras Bold ITC" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" top="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="182.0" prefHeight="306.0" prefWidth="672.0">
+         <children>
+            <VBox prefHeight="276.0" prefWidth="129.0">
+               <children>
+                  <Label text="Nom">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Description">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="20.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Prix">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="20.0" top="4.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="21.0" prefWidth="100.0" text="Date d'ajout">
+                     <VBox.margin>
+                        <Insets bottom="25.0" left="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" right="30.0" top="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="306.0" prefWidth="229.0">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <children>
+                  <JFXTextField fx:id="txtNom" prefHeight="22.0" prefWidth="228.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDescription">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtPrix">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Label fx:id="txtDate" text="Label">
+                     <VBox.margin>
+                        <Insets left="40.0" top="40.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="306.0" prefWidth="190.0">
+               <children>
+                  <ImageView fx:id="imgId" fitHeight="213.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXButton fx:id="btnImage" alignment="CENTER" mnemonicParsing="false" prefHeight="34.0" prefWidth="183.0" style="-fx-background-color: CBCBCB; -fx-background-radius: 10px; -fx-border-radius: 10-px;" text="Change Image" textAlignment="CENTER" textFill="#009685">
+                     <font>
+                        <Font name="Eras Bold ITC" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="35.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <Label fx:id="imgNameLabel">
+                     <VBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator layoutX="112.0" layoutY="575.0" prefHeight="2.0" prefWidth="583.0" />
+    </children>
+</AnchorPane>
